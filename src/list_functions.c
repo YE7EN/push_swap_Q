@@ -14,17 +14,6 @@
 
 t_stack	*ft_stacklast(t_stack *stack)
 {
-	if (!stack)
-		return NULL;
-	while (stack->next)
-		stack = stack->next;
-	return (stack);
-}
-
-
-/*
-t_stack	*ft_stacklast(t_stack *stack)
-{
 	int	size;
 
 	size = ft_stacksize(stack);
@@ -35,9 +24,6 @@ t_stack	*ft_stacklast(t_stack *stack)
 	}
 	return (stack);
 }
-*/
-
-
 int	ft_stacksize(t_stack *stack)
 {
 	int	i;

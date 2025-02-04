@@ -6,7 +6,7 @@
 /*   By: qumiraud <qumiraud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 14:21:14 by qumiraud          #+#    #+#             */
-/*   Updated: 2025/01/31 10:27:51 by qumiraud         ###   ########.fr       */
+/*   Updated: 2025/02/04 13:55:01 by qumiraud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,23 +82,6 @@ void	ft_go_pushswap(t_stack **stack_a)
 		return ;
 	}
 	swap_a(stack_a);
-	//free(stack_b);	
+	//free(stack_b);
 	return ;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

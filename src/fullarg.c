@@ -40,6 +40,9 @@ int	ft_checkarg(char *argv)
 
 char	*ft_concat_argv(char *strfullargv, char *tmp, char *argv)
 {
+	int	i;
+
+	i = 0;
 	if (ft_checkarg(argv) == 1)
 	{
 		free(strfullargv);
