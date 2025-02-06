@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   list_functions.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qumiraud <qumiraud@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pjurdana <pjurdana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 14:12:14 by qumiraud          #+#    #+#             */
-/*   Updated: 2025/01/30 12:26:54 by qumiraud         ###   ########.fr       */
+/*   Updated: 2025/02/06 12:55:34 by pjurdana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ t_stack	*ft_stacklast(t_stack *stack)
 	}
 	return (stack);
 }
+
 int	ft_stacksize(t_stack *stack)
 {
 	int	i;
@@ -31,7 +32,7 @@ int	ft_stacksize(t_stack *stack)
 	i = 0;
 	if (!stack)
 		return (0);
-	while(stack)
+	while (stack)
 	{
 		stack = stack->next;
 		i++;
@@ -39,7 +40,7 @@ int	ft_stacksize(t_stack *stack)
 	return (i);
 }
 
-t_stack *ft_newstack(long number)
+t_stack	*ft_newstack(long number)
 {
 	t_stack	*newstack;
 
@@ -56,7 +57,7 @@ t_stack *ft_newstack(long number)
 
 void	ft_stackadd_back(t_stack **stack, t_stack *new)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	if (!*stack)
 	{
@@ -69,9 +70,9 @@ void	ft_stackadd_back(t_stack **stack, t_stack *new)
 	tmp->next = new;
 }
 
-void ft_clearstack(t_stack **stack_a)
+void	ft_clearstack(t_stack **stack_a)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	tmp = NULL;
 	if (!stack_a)

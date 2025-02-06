@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qumiraud <qumiraud@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pjurdana <pjurdana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 11:55:42 by qumiraud          #+#    #+#             */
-/*   Updated: 2025/01/22 15:20:58 by qumiraud         ###   ########.fr       */
+/*   Updated: 2025/02/06 13:02:31 by pjurdana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
-
-
 
 void	ft_tab_in_stack(t_stack **stack_a, char **tab)
 {
@@ -25,7 +23,7 @@ void	ft_tab_in_stack(t_stack **stack_a, char **tab)
 		exit(EXIT_FAILURE);
 	}
 	*stack_a = ft_newstack((int)ft_atol(tab[i]));
-	if(!*stack_a )
+	if (!(*stack_a))
 	{
 		ft_freeall(tab, ft_countarg(tab));
 		ft_clearstack(stack_a);
@@ -56,7 +54,7 @@ int	main(int argc, char **argv)
 	char	**tab;
 	t_stack	*stack_a;
 
-	if (argc <2)
+	if (argc < 2)
 		return (1);
 	stack_a = NULL;
 	strfullargv = ft_strfullargv(argc, argv);

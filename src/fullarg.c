@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   fullarg.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qumiraud <qumiraud@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pjurdana <pjurdana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 13:22:59 by qumiraud          #+#    #+#             */
-/*   Updated: 2025/01/08 11:41:54 by qumiraud         ###   ########.fr       */
+/*   Updated: 2025/02/06 12:58:52 by pjurdana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../includes/push_swap.h"
 
@@ -32,7 +31,7 @@ int	ft_checkarg(char *argv)
 	while (*argv)
 	{
 		if (*argv > 13 && *argv != ' ')
-			return(0);
+			return (0);
 		argv++;
 	}
 	return (1);
@@ -57,7 +56,7 @@ char	*ft_concat_argv(char *strfullargv, char *tmp, char *argv)
 	free(tmp);
 	tmp = ft_strdupandfree(strfullargv);
 	if (tmp == NULL)
-	return (NULL);
+		return (NULL);
 	strfullargv = ft_strjoin(tmp, " ");
 	if (strfullargv == NULL)
 		return (NULL);
@@ -67,9 +66,9 @@ char	*ft_concat_argv(char *strfullargv, char *tmp, char *argv)
 
 char	*ft_strfullargv(int argc, char **argv)
 {
-	int		i;
-	char	*strfullargv = NULL;
-	char	*tmp = NULL;
+	int			i;
+	static char	*strfullargv = NULL;
+	static char	*tmp = NULL;
 
 	i = 1;
 	if (argv[i][0] == '\0' || ft_digit_in_argv(argv[i]) == 0)

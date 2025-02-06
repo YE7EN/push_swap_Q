@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   special_case.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qumiraud <qumiraud@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pjurdana <pjurdana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 15:59:45 by qumiraud          #+#    #+#             */
-/*   Updated: 2025/01/31 09:31:08 by qumiraud         ###   ########.fr       */
+/*   Updated: 2025/02/06 12:56:31 by pjurdana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
- #include <sys/types.h>
- #include <sys/wait.h>
-
-
+#include <sys/types.h>
+#include <sys/wait.h>
 
 void	ft_special_case(t_stack **stack_a, int size)
 {

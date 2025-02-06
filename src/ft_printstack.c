@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printstack.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qumiraud <qumiraud@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pjurdana <pjurdana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 15:42:22 by qumiraud          #+#    #+#             */
-/*   Updated: 2025/01/31 10:57:27 by qumiraud         ###   ########.fr       */
+/*   Updated: 2025/02/06 12:55:51 by pjurdana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	ft_printstack(t_stack *stack_a, t_stack *stack_b)
 {
-
 	int	size;
 	int	sizeb;
 

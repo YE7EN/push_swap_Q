@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qumiraud <qumiraud@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pjurdana <pjurdana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 14:21:14 by qumiraud          #+#    #+#             */
-/*   Updated: 2025/02/04 13:55:01 by qumiraud         ###   ########.fr       */
+/*   Updated: 2025/02/06 13:01:15 by pjurdana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	ft_find_min(t_stack	*stack)
 
 int	ft_good_order(t_stack	*stack)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	while (stack->next)
 	{
@@ -63,9 +63,9 @@ int	ft_good_order(t_stack	*stack)
 	}
 	return (1);
 }
+
 void	ft_go_pushswap(t_stack **stack_a)
 {
-	//t_stack stack_b;
 	int	size;
 
 	size = ft_stacksize(*stack_a);
@@ -82,6 +82,5 @@ void	ft_go_pushswap(t_stack **stack_a)
 		return ;
 	}
 	swap_a(stack_a);
-	//free(stack_b);
 	return ;
 }

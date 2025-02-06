@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qumiraud <qumiraud@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pjurdana <pjurdana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 11:21:40 by qumiraud          #+#    #+#             */
-/*   Updated: 2025/01/09 13:36:12 by qumiraud         ###   ########.fr       */
+/*   Updated: 2025/02/06 13:04:57 by pjurdana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	reverse_rotate_a(t_stack **stack_a)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	tmp = ft_stacklast(*stack_a);
 	tmp->next = *stack_a;
@@ -42,7 +42,7 @@ void	reverse_rotate_b(t_stack **stack_b)
 
 void	reverse_rotate_rotate(t_stack **stack_a, t_stack **stack_b)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	tmp = ft_stacklast(*stack_a);
 	tmp->next = *stack_a;
